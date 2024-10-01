@@ -9,8 +9,7 @@ import seaborn as sns
 sns.set(style="whitegrid")
 
 # Load the data
-file_path_day = r"C:\Users\WINDOWS11\Downloads\Bike-sharing-dataset\day.csv"
-df_day = pd.read_csv(file_path_day)
+df_day = pd.read_csv("day.csv") 
 
 # Convert 'dteday' to datetime
 df_day['dteday'] = pd.to_datetime(df_day['dteday'])
