@@ -52,7 +52,7 @@ weekend_usage = average_usage_weekday.loc[average_usage_weekday['day_type'] == '
 percentage_increase = ((weekday_usage - weekend_usage) / weekend_usage) * 100
 
 fig1, ax1 = plt.subplots()
-sns.barplot(x='day_type', y='cnt', data=average_usage_weekday, ax=ax1, palette='Blues')
+sns.barplot(x='day_type', y='cnt', data=average_usage_weekday, ax=ax1, color='Blue')
 ax1.set_title('Rata-rata Penggunaan Bike-Sharing: Hari Kerja vs Akhir Pekan')
 ax1.set_xlabel('Tipe Hari')
 ax1.set_ylabel('Rata-rata Jumlah Sepeda yang Disewa')
